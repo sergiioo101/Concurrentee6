@@ -244,9 +244,12 @@ graph TD
     
     W1 -->|Persiste| DB[(H2 Database)]
 ```
+- El usuario inicia la petición vía REST, el `JobLauncher` instancia el Job y Spring Batch gestiona el ciclo de vida de lectura, procesamiento y escritura en la base de datos H2.
 
 ### 2. Tabla de Trabajos Procesados 
 ![Tabla de Trabajos](evidencia_tabla.png)
+- Captura de la consola H2 mostrando la tabla BATCH_JOB_EXECUTION. Se observa el historial de ejecuciones, confirmando que el trabajo procesarDatosMagicosJob finalizó con estado COMPLETED y código de salida exitoso.
 
 ### 3. Rendimiento del Sistema
 ![Logs de Ejecución](evidencia_logs.png)
+- Logs de la aplicación mostrando la trazabilidad completa. Se detallan los tiempos de inicio y fin, la duración total (en milisegundos) y el conteo de ítems procesados por Step, demostrando la eficiencia del sistema.
