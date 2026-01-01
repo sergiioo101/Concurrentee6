@@ -1,11 +1,9 @@
 # Sistema de Procesamiento por Lotes - Departamento de Misterios
 
 ## Integrantes del Grupo
-Mario LLansó
-
-Miguel de Dios
-
-Sergio Martín
+### Mario LLansó
+### Miguel de Dios
+### Sergio Martín
 
 ## Descripción del Proyecto
 
@@ -68,28 +66,28 @@ El sistema está construido siguiendo los principios de Inversión de Control (I
 
 ## Características Implementadas
 
-### ✅ Procesamiento por Lotes
+### Procesamiento por Lotes
 - Jobs configurables para procesar hechizos, artefactos y registros mágicos.
 - Procesamiento por chunks (10 items por chunk) para optimizar el rendimiento.
 - Jobs individuales y un job completo que procesa todos los tipos de datos.
 
-### ✅ Reanudación de Trabajos
+### Reanudación de Trabajos
 - Utiliza `JobRepository` de Spring Batch para almacenar el estado de los jobs.
 - Los jobs pueden ser reanudados desde el punto de fallo.
 - Configuración de reintentos (3 intentos) y límite de omisiones (100 items).
 
-### ✅ Manejo de Errores
+### Manejo de Errores
 - Listeners para capturar y registrar errores.
 - Configuración de `faultTolerant()` en los steps para manejar excepciones.
 - Reintentos automáticos para errores transitorios.
 - Omisión de items con error para continuar el procesamiento.
 
-### ✅ Monitorización
+### Monitorización
 - Spring Actuator configurado con endpoints de health, metrics y batch-jobs.
 - Logging detallado en todos los niveles (Job, Step, Chunk).
 - Métricas de rendimiento (tiempo de ejecución, items procesados, errores).
 
-### ✅ Inversión de Control (IoC)
+### Inversión de Control (IoC)
 - Todos los componentes son beans de Spring gestionados por el contenedor.
 - Inyección de dependencias mediante `@Autowired`.
 - Configuración modular y desacoplada.
@@ -202,12 +200,12 @@ Concurrente6/
 
 ## Criterios de Éxito
 
-✅ Sistema funcionando en tiempo real sin caídas  
-✅ Datos procesados correctamente  
-✅ Reanudación de trabajos fallidos efectiva  
-✅ Manejo de errores robusto  
-✅ Monitorización completa mediante Actuator  
-✅ Logging eficiente para rastreo de eventos  
+Sistema funcionando en tiempo real sin caídas  
+Datos procesados correctamente  
+Reanudación de trabajos fallidos efectiva  
+Manejo de errores robusto  
+Monitorización completa mediante Actuator  
+Logging eficiente para rastreo de eventos  
 
 ## Tecnologías Utilizadas
 
