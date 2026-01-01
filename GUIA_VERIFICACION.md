@@ -32,6 +32,8 @@ H2 console available at '/h2-console'
 
 ✅ **Verificación**: Si ves "Started DepartamentoMisteriosApplication", la aplicación está funcionando.
 
+> Nota: al arrancar, `DataInitializer` carga datos de ejemplo automáticamente. Si además llamas al endpoint `/api/datos-magicos/inicializar`, se insertarán más registros (no idempotente).
+
 ---
 
 ## 📊 PASO 2: Verificar Métricas de Rendimiento
