@@ -2,7 +2,9 @@
 
 ## Integrantes del Grupo
 Mario LLansó
+
 Miguel de Dios
+
 Sergio Martín
 
 ## Descripción del Proyecto
