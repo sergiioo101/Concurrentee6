@@ -217,8 +217,11 @@ Concurrente6/
 - **Lombok**: Reducción de boilerplate
 - **Maven**: Gestión de dependencias
 
+## Elementos Visuales
 
+### 1. Diagrama de Arquitectura 
 
+```mermaid
 graph TD
     User((Usuario)) -->|POST /procesar-todos| API[JobController]
     API -->|Ejecutar| Service[JobService]
@@ -240,3 +243,10 @@ graph TD
     end
     
     W1 -->|Persiste| DB[(H2 Database)]
+```
+
+### 2. Tabla de Trabajos Procesados 
+![Tabla de Trabajos](evidencia_tabla.png)
+
+### 3. Rendimiento del Sistema
+![Logs de Ejecución](evidencia_logs.png)
