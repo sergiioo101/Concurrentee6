@@ -216,3 +216,25 @@ Concurrente6/
 - **H2 Database**: Base de datos en memoria
 - **Lombok**: Reducción de boilerplate
 - **Maven**: Gestión de dependencias
+
+graph TD
+    User((Usuario)) -->|POST /procesar-todos| API[JobController]
+    API -->|Ejecutar| Service[JobService]
+    Service -->|Run| Launcher[JobLauncher]
+    
+    subgraph Spring Batch Context
+        Launcher -->|Inicia| Job[ProcesarDatosMagicosJob]
+        
+        Job --> Step1[Step: Hechizos]
+        Job --> Step2[Step: Artefactos]
+        Job --> Step3[Step: Registros]
+        
+        subgraph Step1 Detail
+            R1[Reader: DB Pendientes] --> P1[Processor: Validar Poder]
+            P1 --> W1[Writer: Guardar Activos]
+        end
+        
+        Step1 -.-> Step1Detail
+    end
+    
+    W1 -->|Persiste| DB[(H2 Database)]
