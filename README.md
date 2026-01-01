@@ -1,8 +1,8 @@
 # Sistema de Procesamiento por Lotes - Departamento de Misterios
 
 ## Integrantes del Grupo
-#### Mario LLansó
-### Miguel de Dios
+### Mario LLansó 
+### Miguel de Dios 
 ### Sergio Martín
 
 ## Descripción del Proyecto
@@ -216,6 +216,8 @@ Concurrente6/
 - **H2 Database**: Base de datos en memoria
 - **Lombok**: Reducción de boilerplate
 - **Maven**: Gestión de dependencias
+
+
 
 graph TD
     User((Usuario)) -->|POST /procesar-todos| API[JobController]
