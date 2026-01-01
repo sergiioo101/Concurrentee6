@@ -200,12 +200,12 @@ Concurrente6/
 
 ## Criterios de Éxito
 
-Sistema funcionando en tiempo real sin caídas  
-Datos procesados correctamente  
-Reanudación de trabajos fallidos efectiva  
-Manejo de errores robusto  
-Monitorización completa mediante Actuator  
-Logging eficiente para rastreo de eventos  
+1. Sistema funcionando en tiempo real sin caídas  
+2. Datos procesados correctamente  
+3. Reanudación de trabajos fallidos efectiva  
+4. Manejo de errores robusto  
+5. Monitorización completa mediante Actuator  
+6. Logging eficiente para rastreo de eventos  
 
 ## Tecnologías Utilizadas
 
