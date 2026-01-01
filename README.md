@@ -1,9 +1,7 @@
 # Sistema de Procesamiento por Lotes - Departamento de Misterios
 
 ## Integrantes del Grupo
-### Mario LLansó 
-### Miguel de Dios 
-### Sergio Martín
+ Mario LLansó, Miguel de Dios y Sergio Martín
 
 ## Descripción del Proyecto
 
@@ -252,4 +250,4 @@ graph TD
 
 ### 3. Rendimiento del Sistema
 ![Logs de Ejecución](evidencia_logs.png)
-- Logs de la aplicación mostrando la trazabilidad completa. Se detallan los tiempos de inicio y fin, la duración total (en milisegundos) y el conteo de ítems procesados por Step, demostrando la eficiencia del sistema.
+- Logs de la aplicación mostrando la trazabilidad completa. Se detallan los tiempos de inicio y fin, la duración total y el conteo de ítems procesados por Step, demostrando la eficiencia del sistema.
