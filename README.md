@@ -1,7 +1,9 @@
 # Sistema de Procesamiento por Lotes - Departamento de Misterios
 
 ## Integrantes del Grupo
-*Nota: Por favor, agregar los nombres de los miembros del grupo aquí*
+Mario LLansó
+Miguel de Dios
+Sergio Martín
 
 ## Descripción del Proyecto
 
