@@ -1,7 +1,7 @@
 # Sistema de Procesamiento por Lotes - Departamento de Misterios
 
 ## Integrantes del Grupo
-### Mario LLansó
+#### Mario LLansó
 ### Miguel de Dios
 ### Sergio Martín
 
